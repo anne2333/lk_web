@@ -1,0 +1,93 @@
+/* 导航居中
+.nav-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* 折叠按钮显示 */
+/* .btn-collapsed {
+  display: inline-block;
+  margin-left: 20px;
+} */
+
+/* 搜索框 */
+
+/* 折叠区1 */
+/* .bs-collapse {
+  width: 100%;
+  display: none;
+  background-color: rgb(67, 67, 67);
+}
+
+.collapse1-top {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  color: white;
+  padding-top: 45px;
+}
+
+.collapse1-top a {
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.collapse1-bottom {
+  color: white;
+  padding-top: 20px;
+}
+
+.collapse1-bottom span {
+  display: inline-block;
+  font-size: 30px;
+  border-bottom: 2px solid white;
+  padding: 0 20px;
+  margin-bottom: 10px;
+}
+
+.collapse1-bottom ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.collapse1-bottom a {
+  color: white;
+}
+
+.collapse2-ul li {
+  padding-left: 10px;
+  line-height: 30px;
+} */
+.head {
+  height: 120px;
+  /* background-color: #fff; */
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 33px;
+}
+
+.head ul {
+  display: flex;
+  height: 100%;
+}
+
+.a_title {
+  width: 120px;
+  height: 120px;
+  text-align: center;
+  color: #333;
+  display: inline-block;
+}
+
+.search {
+  text-align: center;
+}
+
+.img_title {
+  width: 25px;
+  height: 26px;
+}
