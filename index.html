@@ -7,10 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>首页</title>
   <!-- 全屏滚动 -->
-  <link rel="stylesheet" href="./assets/lib/fullPage/fullpage.css">
+  <link rel="stylesheet" href="./assets/lib/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="./assets/lib/bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="./assets/css/main.css">
   <link rel="stylesheet" href="./assets/css/index.css">
+  <!-- <link rel="stylesheet" href="./assets/css/mobile.css"> -->
 </head>
 
 <body>
@@ -25,32 +26,32 @@
       <ul>
         <li>
           <a class="a_title" href="#">
-            <img class="img_title" src="./assets/images/index/新闻资讯.png">
+            <img class="img_title" src="./assets/images/index/gyzy.png">
             <p>关于中优</p>
           </a>
         </li>
         <li>
           <a class="a_title" href="#">
-            <img class="img_title" src="./assets/images/index/解决方案.png">
+            <img class="img_title" src="./assets/images/index/jjfa.png">
             <p>解决方案</p>
           </a>
         </li>
         <li>
           <a class="a_title" href="#">
-            <img class="img_title" src="./assets/images/index/新闻资讯.png">
+            <img class="img_title" src="./assets/images/index/xwzx.png">
             <p>新闻资讯</p>
           </a>
         </li>
         <li>
           <a class="a_title" href="#">
-            <img class="img_title" src="./assets/images/index/加入中优.png">
+            <img class="img_title" src="./assets/images/index/jrzy.png">
             <p>加入中优</p>
           </a>
         </li>
       </ul>
       <div class="search">
         <input type="text" class="form-control">
-        <img src="./assets/images/index/放大镜.png">
+        <img src="./assets/images/index/fdj.png">
       </div>
 
       <div class="nav-btn">
@@ -60,12 +61,12 @@
       </div>
   </nav>
   <!-- 大屏下拉内容区 -->
-  <div class="bs-collapse">
+  <div class="container-fluid bs-collapse">
     <div class="container">
       <div class="collapse1-top">
         <div>
-          <h4>关于中优</h4>
           <ul>
+            <li><a href="#">关于中优</a></li>
             <li><a href="#">中优简介</a></li>
             <li><a href="#">发展历程</a></li>
             <li><a href="#">企业荣誉</a></li>
@@ -75,24 +76,25 @@
           </ul>
         </div>
         <div>
-          <h4>解决方案</h4>
+
           <ul>
+            <li><a href="#">解决方案</a></li>
             <li><a href="#">医用渠道</a></li>
             <li><a href="#">民用渠道</a></li>
             <li><a href="#">商用渠道</a></li>
           </ul>
         </div>
         <div>
-          <h4>新闻资讯</h4>
           <ul>
+            <li><a href="#">新闻资讯</a></li>
             <li><a href="#">行业动态</a></li>
             <li><a href="#">企业新闻</a></li>
             <li><a href="#">法律法规</a></li>
           </ul>
         </div>
         <div>
-          <h4>加入我们</h4>
           <ul>
+            <li><a href="#">加入我们</a></li>
             <li><a href="#">招聘英才</a></li>
             <li><a href="#">联系我们</a></li>
           </ul>
@@ -104,23 +106,29 @@
           <p>扫一扫了解更多</p>
         </div>
 
-        <ul>
-          <li><a href="#"><img src="" alt="" />
+        <ul class="ewm">
+          <li><a href="#">
+              <div><img src="./assets/images/index/lkxdzj.png" /></div>
               <p>利康消毒专家</p>
             </a></li>
-          <li><a href="#"><img src="" alt="" />
-              <p>中优优品商城</p>
+          <li><a href="#">
+              <div><img src="./assets/images/index/jfrjk.png" /></div>
+              <p>洁芙柔健康</p>
             </a></li>
-          <li><a href="#"><img src="" alt="" />
+          <li><a href="#">
+              <div><img src="./assets/images/index/lsjgzh.png" /></div>
               <p>利思洁公众号</p>
             </a></li>
-          <li><a href="#"><img src="" alt="" />
+          <li><a href="#">
+              <div><img src="./assets/images/index/ylsxtmd.png" /></div>
               <p>幽螺莎星天猫店</p>
             </a></li>
-          <li><a href="#"><img src="" alt="" />
+          <li><a href="#">
+              <div><img src="./assets/images/index/jfrtmd.png" /></div>
               <p>洁芙柔天猫店</p>
             </a></li>
-          <li><a href="#"><img src="" alt="" />
+          <li><a href="#">
+              <div><img src="./assets/images/index/jfrgzh.png" /></div>
               <p>洁芙柔公众号</p>
             </a></li>
         </ul>
@@ -128,61 +136,178 @@
     </div>
   </div>
   <!-- 主体内容 -->
-  <div id="fullpage">
-    <div class="section">
-      <div id="carousel-generic" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#carousel-generic" data-slide-to="0" class="active"></li>
-          <li data-target="#carousel-generic" data-slide-to="1"></li>
-          <li data-target="#carousel-generic" data-slide-to="2"></li>
-        </ol>
+  <!-- Swiper -->
+  <div class="swiper pageSwier">
+    <div class="swiper-wrapper">
+      <!-- banner page1 -->
+      <div class="swiper-slide page1">
+        <div id="carousel-generic" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-generic" data-slide-to="2"></li>
+          </ol>
 
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
-          <div class="item active">
-            <img src="..." alt="...">
-            <div class="carousel-caption">
-              ...
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img src="./assets/images/index/banner01.jpg">
+              <div class="carousel-caption">
+
+              </div>
+            </div>
+            <div class="item">
+              <img src="./assets/images/index/banner02.jpg">
+              <div class="carousel-caption">
+
+              </div>
+            </div>
+            <div class="item">
+              <img src="./assets/images/index/banner03.jpg">
+              <div class="carousel-caption">
+
+              </div>
             </div>
           </div>
-          <div class="item">
-            <img src="..." alt="...">
-            <div class="carousel-caption">
-              ...
+
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true">
+              <img src="./assets/images/index/carousel-control.png">
+            </span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true">
+              <img src="./assets/images/index/carousel-control.png">
+            </span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      <!-- 公司简介 page2 -->
+      <div class="swiper-slide page2">
+        <div class="page2content">
+          <div class="left">
+            <div class="title">
+              <p>|</p>
+              <p>公司简介</p>
+              <p>COMPANY PROFILE</p>
+            </div>
+            <div class="content">
+              <p>
+                上海中优医药高科技股份有限公司上海利康消毒高科技有限公司成立于1988年，其前身是由中国人民解放军第二军医大学创建的利康消毒灭菌技术公司。公司成立三十多年来一直以“求实、创新、严谨、献身”为企业宗旨，通过多年持续创新，已拥有特殊专有技术20多项，专利申请100
+                多项，专利证书50多个，2010年7月被上海市知识产权局评为上海市专利工作示范企业，是卫生消毒及医院感染控制领域的高新技术企业。
+
+              </p>
+              <p>中优的生产基地通过了ISO9001和ISO13485认证、人用药和畜禽药GMP认证，构建了覆盖全国医用消毒市场的销售网络，产品销售遍及全国30多个省、自治区和直辖市的各大医疗机构。</p>
+              <p>
+                中优精心培育了在中国医疗机构广受欢迎的“安尔碘”、“点而康”、“绿莎新”、“洁芙柔”、“葡泰”等著名商标，利康已经成为了中国消毒产业的龙头。
+
+              </p>
+              <p>
+                中优一直以扶救人民危难和满足社会需求为己任，无论是2020年的新冠疫情暴发、2022年的北京
+                冬奥会，还是2022年来势汹汹的奥密克戎变异株......在每一个重要时刻，利康人都全力战斗在最前
+                线，做出了自己的贡献，展现了强烈的社会责任感。
+              </p>
+            </div>
+            <div class="count">
+              <ul class="page2-ul">
+                <li>
+                  <div>
+                    <p class="value1">30</p>
+                    <div>
+                      <sup>+</sup>
+                      <p>余年</p>
+                    </div>
+                  </div>
+                  <p>历史</p>
+                </li>
+                <li>
+                  <div>
+                    <p class="value2">3</p>
+                    <div>
+                      <sup style="visibility: hidden;">+</sup>
+                      <p>所</p>
+                    </div>
+                  </div>
+                  <p>研发中心</p>
+                </li>
+                <li>
+                  <div>
+                    <p class="value3">30</p>
+                    <div>
+                      <sup>+</sup>
+                      <p>万</p>
+                    </div>
+                  </div>
+                  <p>服务医疗机构</p>
+                </li>
+
+              </ul>
             </div>
           </div>
-          ...
+          <div class="right">
+            <img src="./assets/images/index/page2.jpg">
+          </div>
         </div>
 
-        <!-- Controls -->
-        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
+
+      </div>
+      <!-- 解决方案 page3 -->
+      <div class="swiper-slide page3">
+        <h2>解决方案</h2>
+        <p>PRODUCTS SOLUTIONS</p>
+        <ul class="page3-ul">
+          <li><a href="#"><img src="./assets/images/index/page3_1.jpg"></a></li>
+          <li><a href="#"><img src="./assets/images/index/page3_2.jpg"></a></li>
+          <li><a href="#"><img src="./assets/images/index/page3_3.jpg"></a></li>
+        </ul>
       </div>
     </div>
-    <div class="section">
-      <h3>第二屏</h3>
-    </div>
-    <div class="section">
-      <h3>第三屏</h3>
-    </div>
-    <div class="section">
-      <h3>第四屏</h3>
-    </div>
+
   </div>
-  <!-- 主体内容 -->
+
 
 
   <!-- 全屏滚动 -->
   <script src="./assets/lib/jquery.js"></script>
-  <script src="./assets/lib/fullPage/fullpage.js"></script>
+  <script src="./assets/lib/swiper/swiper-bundle.min.js"></script>
+  <script src="./assets/js/count.js"></script>
+  <script>
+    var see1 = 0
+    var swiper = new Swiper(".pageSwier", {
+      direction: "vertical",
+      slidesPerView: 'auto',
+      speed: 1000,
+      mousewheel: true,
+      on: {
+        transitionStart: function () {
 
+        },
+        slideChangeTransitionStart: function () {
+          if (this.activeIndex == 1 && see1 == 0) {
+            setTimeout(function () {
+              $(".value1").numberRock({
+                speed: 40,
+                count: 30
+              })
+              $(".value2").numberRock({
+                speed: 400,
+                count: 3
+              })
+              $(".value3").numberRock({
+                speed: 40,
+                count: 30
+              })
+            }, 1500);
+            see1 = 1
+          }
+        },
+      },
+    });
+  </script>
   <!-- bootstrap -->
   <script src="./assets/lib/bootstrap/bootstrap.min.js"></script>
   <script src="./assets/js/index.js"></script>

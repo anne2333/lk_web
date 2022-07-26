@@ -1,0 +1,34 @@
+@media screen and (max-width: 992px) {
+  .head {
+    height: 60px;
+  }
+  .head ul {
+    display: none;
+  }
+  .head .search {
+    display: none;
+  }
+  .head > a {
+    margin-right: auto;
+  }
+  .bs-collapse {
+    top: 60px;
+  }
+  .bs-collapse .collapse1-top {
+    flex-direction: column;
+    padding-bottom: 45px;
+  }
+  .bs-collapse .collapse1-top ul {
+    border-bottom: 1px solid #fff;
+  }
+  .bs-collapse .collapse1-top ul li {
+    display: none;
+  }
+  .bs-collapse .collapse1-top ul li:first-child {
+    display: flex;
+    width: 100%;
+  }
+  .bs-collapse .collapse1-bottom {
+    display: none;
+  }
+}

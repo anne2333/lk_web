@@ -1,0 +1,46 @@
+// out: ../css/
+@media screen and (max-width:992px) {
+  .head {
+    height: 60px;
+
+    ul {
+      display: none;
+    }
+
+    .search {
+      display: none;
+    }
+
+    &>a {
+      margin-right: auto;
+    }
+  }
+
+  .bs-collapse {
+    top: 60px;
+
+    .collapse1-top {
+      flex-direction: column;
+      padding-bottom: 45px;
+
+      ul {
+        border-bottom: 1px solid #fff;
+
+
+        li {
+          display: none;
+
+          &:first-child {
+            display: flex;
+            width: 100%;
+          }
+        }
+      }
+    }
+
+
+    .collapse1-bottom {
+      display: none;
+    }
+  }
+}
