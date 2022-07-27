@@ -1,10 +1,12 @@
 // out: ../css/
-@media screen and (max-width:992px) {
+@vw: 19.2vw;
+
+@media screen and (max-width:1000px) {
   .head {
     height: 60px;
 
     ul {
-      display: none;
+      display: none !important;
     }
 
     .search {
@@ -21,7 +23,7 @@
 
     .collapse1-top {
       flex-direction: column;
-      padding-bottom: 45px;
+      padding-bottom: (44/@vw);
 
       ul {
         border-bottom: 1px solid #fff;
@@ -41,6 +43,16 @@
 
     .collapse1-bottom {
       display: none;
+    }
+  }
+
+  .page3-inner {
+    .page3swiper {
+      display: none;
+    }
+
+    .page3swiperm {
+      display: flex !important;
     }
   }
 }

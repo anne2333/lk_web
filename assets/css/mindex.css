@@ -1,9 +1,9 @@
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1000px) {
   .head {
     height: 60px;
   }
   .head ul {
-    display: none;
+    display: none !important;
   }
   .head .search {
     display: none;
@@ -16,7 +16,7 @@
   }
   .bs-collapse .collapse1-top {
     flex-direction: column;
-    padding-bottom: 45px;
+    padding-bottom: 2.29166667vw;
   }
   .bs-collapse .collapse1-top ul {
     border-bottom: 1px solid #fff;
@@ -30,5 +30,11 @@
   }
   .bs-collapse .collapse1-bottom {
     display: none;
+  }
+  .page3-inner .page3swiper {
+    display: none;
+  }
+  .page3-inner .page3swiperm {
+    display: flex !important;
   }
 }

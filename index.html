@@ -11,13 +11,13 @@
   <link rel="stylesheet" href="./assets/lib/bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="./assets/css/main.css">
   <link rel="stylesheet" href="./assets/css/index.css">
-  <!-- <link rel="stylesheet" href="./assets/css/mobile.css"> -->
+  <link rel="stylesheet" href="./assets/css/mindex.css">
 </head>
 
 <body>
   <!-- 头部导航 -->
   <nav class="navbar-fixed-top">
-    <div class="container head">
+    <div class="head">
       <!-- logo -->
       <a href="#">
         <img class="logo" src="./assets/images/index/LOGO.png">
@@ -26,26 +26,30 @@
       <ul>
         <li>
           <a class="a_title" href="#">
-            <img class="img_title" src="./assets/images/index/gyzy.png">
-            <p>关于中优</p>
+            关于中优
+            <!-- <img class="img_title" src="./assets/images/index/gyzy.png">
+            <p>关于中优</p> -->
           </a>
         </li>
         <li>
           <a class="a_title" href="#">
-            <img class="img_title" src="./assets/images/index/jjfa.png">
-            <p>解决方案</p>
+            解决方案
+            <!-- <img class="img_title" src="./assets/images/index/jjfa.png">
+            <p>解决方案</p> -->
           </a>
         </li>
         <li>
           <a class="a_title" href="#">
-            <img class="img_title" src="./assets/images/index/xwzx.png">
-            <p>新闻资讯</p>
+            新闻资讯
+            <!-- <img class="img_title" src="./assets/images/index/xwzx.png">
+            <p>新闻资讯</p> -->
           </a>
         </li>
         <li>
           <a class="a_title" href="#">
-            <img class="img_title" src="./assets/images/index/jrzy.png">
-            <p>加入中优</p>
+            加入中优
+            <!-- <img class="img_title" src="./assets/images/index/jrzy.png">
+            <p>加入中优</p> -->
           </a>
         </li>
       </ul>
@@ -59,6 +63,7 @@
         <span></span>
         <span></span>
       </div>
+    </div>
   </nav>
   <!-- 大屏下拉内容区 -->
   <div class="container-fluid bs-collapse">
@@ -259,12 +264,177 @@
       <div class="swiper-slide page3">
         <h2>解决方案</h2>
         <p>PRODUCTS SOLUTIONS</p>
-        <ul class="page3-ul">
-          <li><a href="#"><img src="./assets/images/index/page3_1.jpg"></a></li>
-          <li><a href="#"><img src="./assets/images/index/page3_2.jpg"></a></li>
-          <li><a href="#"><img src="./assets/images/index/page3_3.jpg"></a></li>
-        </ul>
+        <div class="page3-inner">
+          <div class="swiper page3swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#"><img src="./assets/images/index/page3_1.jpg"></a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#"><img src="./assets/images/index/page3_2.jpg"></a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#"><img src="./assets/images/index/page3_3.jpg">
+              </div>
+            </div>
+          </div>
+          <div class="swiper page3swiperm">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#"><img src="./assets/images/index/page3_1.jpg"></a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#"><img src="./assets/images/index/page3_2.jpg"></a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#"><img src="./assets/images/index/page3_3.jpg"></a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+      <!-- 旗下品牌 page4 -->
+      <div class="swiper-slide page4">
+        <h2>旗下品牌
+          <p>SUB-BRAND</p>
+        </h2>
+        <div class="logo-list">
+          <div class="logo-item logo-item-active">
+            <img src="./assets//images/index/p5jfrs.png">
+            <img src="./assets//images/index/p5jfrs1.png">
+          </div>
+          <div class="logo-item">
+            <img src="./assets//images/index/p5aed.png">
+            <img src="./assets//images/index/p5aed1.png">
+          </div>
+          <div class="logo-item">
+            <img src="./assets//images/index/p5dek.png">
+            <img src="./assets//images/index/p5dek1.png">
+          </div>
+          <div class="logo-item">
+            <img src="./assets//images/index/p5pt.png">
+            <img src="./assets//images/index/p5pt1.png">
+          </div>
+          <div class="logo-item">
+            <img src="./assets//images/index/p5jfr.png">
+            <img src="./assets//images/index/p5jfr1.png">
+          </div>
+          <div class="logo-item">
+            <img src="./assets//images/index/p5lsx.png">
+            <img src="./assets//images/index/p5lsx1.png">
+          </div>
+          <div class="logo-item">
+            <img src="./assets//images/index/p5ys.png">
+            <img src="./assets//images/index/p5ys1.png">
+          </div>
+          <div class="logo-item">
+            <img src="./assets//images/index/p5ylsx.png">
+            <img src="./assets//images/index/p5ylsx1.png">
+          </div>
+        </div>
+      </div>
+
+      <!-- 新闻资讯 page5 -->
+      <div class="swiper-slide page5">
+        <div class="page5-inner">
+          <div class="title">
+            <span>|</span>
+            <span>新闻中心</span>
+            <span>NEWS CENTER</span>
+          </div>
+          <div class="page5-tab">
+            <span tab-data="1" class="page5-tab-active">行业动态</span>
+            <span tab-data="2">企业新闻</span>
+            <span tab-data="3">法律法规</span>
+          </div>
+          <div class="tab-item">
+            <div class="left">
+              <img src="./assets/images/index/page6.jpg">
+            </div>
+            <div class="right">
+              <a target="_blank" href="#">
+                <h1>2022医院感染管理预防与控制新进展研讨会<span>07-04</span></h1>
+                <p></p>
+              </a>
+              <a target="_blank" href="#">
+                <h1>2022医院感染管理预防与控制新进展研讨会<span>07-04</span></h1>
+                <p></p>
+              </a>
+              <a target="_blank" href="#">
+                <h1>2022医院感染管理预防与控制新进展研讨会<span>07-04</span></h1>
+                <p></p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <div class="swiper-slide footer">
+        <div class="footerinner">
+          <div class="left">
+            <div>
+              <span>中优</span>
+              <p>扫一扫了解更多</p>
+            </div>
+
+            <ul class="ewm">
+              <li><a href="#">
+                  <div><img src="./assets/images/index/lkxdzj.png" /></div>
+                  <p>利康消毒专家</p>
+                </a></li>
+              <li><a href="#">
+                  <div><img src="./assets/images/index/jfrjk.png" /></div>
+                  <p>洁芙柔健康</p>
+                </a></li>
+              <li><a href="#">
+                  <div><img src="./assets/images/index/lsjgzh.png" /></div>
+                  <p>利思洁公众号</p>
+                </a></li>
+            </ul>
+          </div>
+          <div class="right">
+            <div>
+              <ul>
+                <li><a href="#">关于中优</a></li>
+                <li><a href="#">中优简介</a></li>
+                <li><a href="#">发展历程</a></li>
+                <li><a href="#">企业荣誉</a></li>
+                <li><a href="#">企业文化</a></li>
+                <li><a href="#">旗下品牌</a></li>
+                <li><a href="#">营销网络</a></li>
+              </ul>
+            </div>
+            <div>
+
+              <ul>
+                <li><a href="#">解决方案</a></li>
+                <li><a href="#">医用渠道</a></li>
+                <li><a href="#">民用渠道</a></li>
+                <li><a href="#">商用渠道</a></li>
+              </ul>
+            </div>
+            <div>
+              <ul>
+                <li><a href="#">新闻资讯</a></li>
+                <li><a href="#">行业动态</a></li>
+                <li><a href="#">企业新闻</a></li>
+                <li><a href="#">法律法规</a></li>
+              </ul>
+            </div>
+            <div>
+              <ul>
+                <li><a href="#">加入我们</a></li>
+                <li><a href="#">招聘英才</a></li>
+                <li><a href="#">联系我们</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="foot"></div>
+        </div>
+
+      </div>
+
     </div>
 
   </div>
@@ -277,7 +447,7 @@
   <script src="./assets/js/count.js"></script>
   <script>
     var see1 = 0
-    var swiper = new Swiper(".pageSwier", {
+    var swiper1 = new Swiper(".pageSwier", {
       direction: "vertical",
       slidesPerView: 'auto',
       speed: 1000,
@@ -305,7 +475,30 @@
             see1 = 1
           }
         },
+        onTransitionEnd: function (e) {
+
+          if (e.activeIndex == activeMaxPage) { // 是否最后一页
+
+            swiperBox.lockSwipeToNext();
+
+            setSwiperBottom(e);
+
+          } else {
+
+            swiperBox.unlockSwipeToNext();
+
+          }
+
+        },
+
       },
+    });
+
+    var swiper3 = new Swiper(".page3swiper", {
+      slidesPerView: 3,
+    });
+    var swiper3m = new Swiper(".page3swiperm", {
+      slidesPerView: 1,
     });
   </script>
   <!-- bootstrap -->
