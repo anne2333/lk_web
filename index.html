@@ -299,7 +299,7 @@
           <p>SUB-BRAND</p>
         </h2>
         <div class="logo-list">
-          <div class="logo-item logo-item-active">
+          <div class="logo-item">
             <img src="./assets//images/index/p5jfrs.png">
             <img src="./assets//images/index/p5jfrs1.png">
           </div>
@@ -430,9 +430,11 @@
               </ul>
             </div>
           </div>
-          <div class="foot"></div>
-        </div>
 
+        </div>
+        <div class="foot">
+          <p>上海中优医药高科技股份有限公司 版权所有 沪ICP备00000000号 网站声明 互联网药品信息服务资格证书 （沪）-非经营性-2022-0001 沪公网安备 12345678901234号</p>
+        </div>
       </div>
 
     </div>
@@ -450,6 +452,7 @@
     var swiper1 = new Swiper(".pageSwier", {
       direction: "vertical",
       slidesPerView: 'auto',
+      autopaly: false,
       speed: 1000,
       mousewheel: true,
       on: {
@@ -474,22 +477,7 @@
             }, 1500);
             see1 = 1
           }
-        },
-        onTransitionEnd: function (e) {
-
-          if (e.activeIndex == activeMaxPage) { // 是否最后一页
-
-            swiperBox.lockSwipeToNext();
-
-            setSwiperBottom(e);
-
-          } else {
-
-            swiperBox.unlockSwipeToNext();
-
-          }
-
-        },
+        }
 
       },
     });
@@ -501,6 +489,7 @@
       slidesPerView: 1,
     });
   </script>
+
   <!-- bootstrap -->
   <script src="./assets/lib/bootstrap/bootstrap.min.js"></script>
   <script src="./assets/js/index.js"></script>
