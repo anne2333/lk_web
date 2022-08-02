@@ -392,7 +392,7 @@ nav .head .nav-btn-active span:nth-child(3) {
 .swiper .page5-inner .tab-item {
   height: 35.41666667vw;
   width: 100%;
-  display: flex;
+  display: none;
   position: relative;
 }
 .swiper .page5-inner .tab-item .left {
@@ -450,6 +450,9 @@ nav .head .nav-btn-active span:nth-child(3) {
   background-repeat: no-repeat;
   background-size: contain;
   transition: 0.5s;
+}
+.swiper .page5-inner .tab-item-active {
+  display: flex;
 }
 .swiper .footer {
   width: 100%;

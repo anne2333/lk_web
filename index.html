@@ -347,25 +347,6 @@
             <span tab-data="2">企业新闻</span>
             <span tab-data="3">法律法规</span>
           </div>
-          <div class="tab-item">
-            <div class="left">
-              <img src="./assets/images/index/page6.jpg">
-            </div>
-            <div class="right">
-              <a target="_blank" href="#">
-                <h1>2022医院感染管理预防与控制新进展研讨会<span>07-04</span></h1>
-                <p></p>
-              </a>
-              <a target="_blank" href="#">
-                <h1>2022医院感染管理预防与控制新进展研讨会<span>07-04</span></h1>
-                <p></p>
-              </a>
-              <a target="_blank" href="#">
-                <h1>2022医院感染管理预防与控制新进展研讨会<span>07-04</span></h1>
-                <p></p>
-              </a>
-            </div>
-          </div>
         </div>
       </div>
 
@@ -436,17 +417,40 @@
           <p>上海中优医药高科技股份有限公司 版权所有 沪ICP备00000000号 网站声明 互联网药品信息服务资格证书 （沪）-非经营性-2022-0001 沪公网安备 12345678901234号</p>
         </div>
       </div>
-
     </div>
 
   </div>
 
+  <script type="text/html" id="tpl-tab">
+  {{each data}}
+    {{if ($index)%3==0}}
+      {{if $value.cate_name=="行业动态"}}
+        <div class="tab-item tab-item-active" tab-data="{{$value.cate_name|formatData}}">
+      {{else}}
+        <div class="tab-item" tab-data="{{$value.cate_name|formatData}}">
+      {{/if}}
+      <div class="left">
+        <img src="{{$value.cover_img}}">
+      </div>
+    <div class="right">
+    {{/if}}
 
+      <a target="_blank" href="#">
+        <h1>{{$value.title}}<span>{{$value.pub_date|dateFormat}}</span></h1>
+        <p></p>
+      </a>
+    {{if ($index)%3==2}}
+  </div>
+</div>
+    {{/if}}
+  {{/each}}
+</script>
 
   <!-- 全屏滚动 -->
   <script src="./assets/lib/jquery.js"></script>
   <script src="./assets/lib/swiper/swiper-bundle.min.js"></script>
   <script src="./assets/js/count.js"></script>
+  <script src="./config.js"></script>
   <script>
     var see1 = 0
     var swiper1 = new Swiper(".pageSwier", {
@@ -492,7 +496,11 @@
 
   <!-- bootstrap -->
   <script src="./assets/lib/bootstrap/bootstrap.min.js"></script>
+  <script src="./assets/lib/template-web.js"></script>
+  <script src="./assets/js/baseAPI.js"></script>
   <script src="./assets/js/index.js"></script>
+
+
 </body>
 
 </html>
