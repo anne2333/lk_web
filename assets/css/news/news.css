@@ -1,0 +1,52 @@
+html,
+body,
+ul,
+li,
+p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+ol,
+ul {
+  list-style: none;
+}
+a:hover,
+a:visited,
+a:active,
+a:focus {
+  text-decoration: none;
+  color: #333;
+  outline: none;
+}
+.ht {
+  margin: 3.4375vw auto;
+  width: 950px;
+  line-height: 1.45833333vw;
+}
+.hp {
+  background-color: #F7F8FA;
+  width: 100%;
+  height: 20.15625vw;
+  margin-top: 60px;
+  padding-top: 8.64583333vw;
+}
+.hp .title {
+  width: 950px;
+  margin: 0 auto;
+  font-size: 1.875vw;
+  font-weight: 800;
+  line-height: 3.125vw;
+  color: #333;
+}
+.hp .time {
+  width: 950px;
+  margin: 0 auto;
+  margin-top: 3.33333333vw;
+  font-size: 0.9375vw;
+  font-weight: 800;
+  color: #666;
+}

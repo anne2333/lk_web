@@ -1,45 +1,47 @@
 $(function () {
 
-    initTable()
-    $('.nav-btn').click(function () {
-        $(this).toggleClass('nav-btn-active')
+    initTable('行业动态')
+    //面包屑点击事件换成更多点击事件
+    $('.head .more').click(function () {
         $('.bs-collapse').slideToggle(300)
     })
-    $('.logo-item').on('mouseenter', function () {
-        $(this).addClass('logo-item-active')
-    })
-    $('.logo-item').on('mouseleave', function () {
-        $(this).removeClass('logo-item-active')
-    })
 
-    var tabData = 0;
+
+    // var tabData = 0;
     $('.page5-tab').on('click', 'span', function () {
         $(this).addClass('page5-tab-active').siblings().removeClass('page5-tab-active')
-        tabData = $(this).attr('tab-data')
-        $('.tab-item').each(function () {
-            if (tabData == $(this).attr('tab-data')) {
-                $(this).addClass('tab-item-active').siblings().removeClass('tab-item-active')
-            }
-        })
+        initTable($(this)[0].innerText)
+        // tabData = $(this).attr('tab-data')
+        // $('.tab-item').each(function () {
+        //     if (tabData == $(this).attr('tab-data')) {
+        //         $(this).addClass('tab-item-active').siblings().removeClass('tab-item-active')
+        //     }
+        // })
+
     })
 
+    // $('.content').on('click', function () {
+    //     var id = $(this).data('id')
+    //     location.href = './pages/news/news.html?id=' + id
+    // })
 })
 
 // var URL = 'http://127.0.0.1:8080'
 //获取前三条文章列表数据
-function initTable() {
+function initTable(cate_name) {
     $.ajax({
         method: 'GET',
-        url: '/api/article/topthree',
+        url: '/api/article/topthree' + cate_name,
         success: function (res) {
-            if (res.status !== 0) return layui.layer.msg('获取文章列表失败')
+            if (res.status !== 0) return
             res.data.map(item => {
                 return item.cover_img = URL + item.cover_img
             })
             // console.log(res);
             //使用模板引擎渲染数据
             var htmlStr = template('tpl-tab', res)
-            $('.page5-inner').append(htmlStr)
+            $('.tab-item').children().remove()
+            $('.tab-item').append(htmlStr)
         }
     })
 }

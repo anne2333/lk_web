@@ -1,0 +1,40 @@
+.main {
+  position: relative;
+}
+.main .title {
+  position: absolute;
+  left: 16.09375vw;
+  top: 13.80208333vw;
+  font-weight: bold;
+  color: #3E3A39;
+  font-size: 2.34375vw;
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 0.36458333vw;
+}
+.main .title span:last-child {
+  font-size: 1.5625vw;
+  font-weight: normal;
+  letter-spacing: normal;
+}
+.content .top {
+  height: 12.08333333vw;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content .top span:first-child {
+  color: #333;
+  font-size: 1.77083333vw;
+  margin-top: 5.52083333vw;
+}
+.content .top span:last-child {
+  font-size: 0.83333333vw;
+  color: #949594;
+}
+.content .bottom {
+  width: 59.89583333vw;
+  height: 40.9375vw;
+  margin: 0 auto;
+}

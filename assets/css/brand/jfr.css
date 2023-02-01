@@ -1,0 +1,131 @@
+.main {
+  position: relative;
+}
+.main .title {
+  position: absolute;
+  left: 16.09375vw;
+  top: 13.80208333vw;
+  font-weight: bold;
+  color: #3E3A39;
+  font-size: 2.34375vw;
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 0.36458333vw;
+}
+.main .title span:last-child {
+  font-size: 1.5625vw;
+  font-weight: normal;
+  letter-spacing: normal;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.content .logo {
+  width: 10.41666667vw;
+  height: 4.73958333vw;
+  margin: 6.97916667vw auto 4.89583333vw auto;
+}
+.content .common {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 1.25vw;
+  color: #808285;
+}
+.content .one {
+  left: 32.08333333vw;
+  top: 17.39583333vw;
+}
+.content .one span:nth-child(n+3) {
+  font-size: 0.9375vw;
+}
+.content .two {
+  align-items: flex-start;
+  left: 52.60416667vw;
+  top: 25.52083333vw;
+}
+.content .two span:nth-child(n+3) {
+  font-size: 0.83333333vw;
+}
+.content .three {
+  left: 32.08333333vw;
+  top: 39.79166667vw;
+}
+.content .three span:nth-child(n+2) {
+  font-size: 0.83333333vw;
+}
+.content .four {
+  align-items: flex-start;
+  left: 52.60416667vw;
+  top: 49.47916667vw;
+}
+.content .four span:last-child {
+  font-size: 0.83333333vw;
+}
+.content .five {
+  left: 33.33333333vw;
+  top: 58.64583333vw;
+}
+.content .six {
+  align-items: flex-start;
+  left: 52.60416667vw;
+  top: 68.22916667vw;
+}
+.content .seven {
+  left: 34.6875vw;
+  top: 76.04166667vw;
+}
+.content .seven span:last-child {
+  font-size: 0.83333333vw;
+  margin-top: 1.30208333vw;
+}
+.content .eight {
+  align-items: flex-start;
+  left: 52.60416667vw;
+  top: 87.91666667vw;
+}
+.content .eight span:last-child {
+  margin-left: -0.78125vw;
+}
+.content .nine {
+  left: 36.71875vw;
+  top: 97.39583333vw;
+}
+.content .nine span:last-child {
+  margin-right: -0.78125vw;
+}
+.content .ten {
+  align-items: flex-start;
+  left: 52.60416667vw;
+  top: 105.20833333vw;
+}
+.content .ten span:last-child {
+  margin-left: -0.78125vw;
+}
+.content .eleven {
+  left: 34.89583333vw;
+  top: 115.10416667vw;
+}
+.content .eleven span:last-child {
+  font-size: 0.78125vw;
+}
+.content .twelve,
+.content .fourteen {
+  align-items: flex-start;
+  left: 52.60416667vw;
+  top: 126.04166667vw;
+}
+.content .thirteen {
+  left: 34.375vw;
+  top: 135.9375vw;
+}
+.content .thirteen span:last-child {
+  margin-right: -0.78125vw;
+}
+.content .fourteen {
+  top: 145.83333333vw;
+}

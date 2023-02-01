@@ -1,0 +1,48 @@
+.main {
+  position: relative;
+}
+.main .title {
+  position: absolute;
+  left: 16.09375vw;
+  top: 13.80208333vw;
+  font-weight: bold;
+  color: #3E3A39;
+  font-size: 2.34375vw;
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 0.36458333vw;
+}
+.main .title span:last-child {
+  font-size: 1.5625vw;
+  font-weight: normal;
+  letter-spacing: normal;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content .logo {
+  width: 8.22916667vw;
+  height: 1.875vw;
+  margin: 6.97916667vw auto 4.89583333vw auto;
+}
+.content span {
+  width: 64.11458333vw;
+  font-size: 0.83333333vw;
+  line-height: 1.5625vw;
+  color: #949594;
+  text-indent: 1.66666667vw;
+}
+.content .img-list {
+  margin-top: 4.01041667vw;
+}
+.content .img-list img {
+  width: 12.39583333vw;
+  height: 17.34375vw;
+  margin-right: 6.61458333vw;
+}
+.content .img-list img:first-child {
+  width: 21.71875vw;
+  height: 17.5vw;
+}

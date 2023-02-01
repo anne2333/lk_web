@@ -1,0 +1,65 @@
+.main {
+  position: relative;
+}
+.main .title {
+  position: absolute;
+  left: 16.09375vw;
+  top: 13.80208333vw;
+  font-weight: bold;
+  color: #3E3A39;
+  font-size: 2.34375vw;
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 0.36458333vw;
+}
+.main .title span:last-child {
+  font-size: 1.5625vw;
+  font-weight: normal;
+  letter-spacing: normal;
+}
+.content {
+  height: 39.0625vw;
+}
+.content .top {
+  height: 12.08333333vw;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content .top span:first-child {
+  color: #333;
+  font-size: 1.77083333vw;
+  margin-top: 5.52083333vw;
+}
+.content .top span:last-child {
+  font-size: 0.83333333vw;
+  color: #949594;
+}
+.content .bottom {
+  display: flex;
+}
+.content .bottom .left {
+  margin-left: 15.15625vw;
+  padding: 3.59375vw 3.17708333vw 3.95833333vw 0.98958333vw;
+}
+.content .bottom .left img {
+  width: 30.20833333vw;
+  height: 18.22916667vw;
+}
+.content .bottom .right {
+  margin-left: 7.34375vw;
+  padding-top: 7.1875vw;
+}
+.content .bottom .right img {
+  width: 7.8125vw;
+  height: 2.5vw;
+}
+.content .bottom .right p {
+  color: #3E3A39;
+  font-size: 0.9375vw;
+  margin-top: 1.40625vw;
+}
+.content .bottom .right p i {
+  font-weight: 700;
+}

@@ -1,0 +1,29 @@
+.main img {
+  width: 100%;
+}
+.main .head {
+  border-bottom: 1px solid #3E3A39;
+}
+.main .head .nav-banner {
+  width: 67.70833333vw;
+  height: 4.0625vw;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 4.0625vw;
+  display: flex;
+  align-content: space-between;
+  font-size: 0.9375vw;
+}
+.main .head .nav-banner .active {
+  border-bottom: 1px solid #234CE2;
+}
+.main .head .nav-banner a {
+  display: inline-block;
+  height: 100%;
+  width: 8.85416667vw;
+  color: #333;
+}
+.main .head .nav-banner a:hover {
+  color: #234CE2;
+  border-bottom: 1px solid #234CE2;
+}

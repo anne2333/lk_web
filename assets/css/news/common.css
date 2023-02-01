@@ -1,0 +1,131 @@
+.main {
+  position: relative;
+}
+.main .banner {
+  width: 100%;
+}
+.main .title {
+  position: absolute;
+  left: 16.09375vw;
+  top: 13.80208333vw;
+  font-weight: bold;
+  color: #3E3A39;
+  font-size: 2.34375vw;
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 0.36458333vw;
+}
+.main .title span:last-child {
+  font-size: 1.5625vw;
+  font-weight: normal;
+  letter-spacing: normal;
+}
+.content {
+  width: 67.70833333vw;
+  padding-top: 1.92708333vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content .left span {
+  font-size: 1.77083333vw;
+  color: #333333;
+}
+.content .left span:first-child {
+  color: #234CE2;
+}
+.content .left span:nth-child(3) {
+  font-size: 0.83333333vw;
+  color: #949594;
+  margin-left: 0.36458333vw;
+}
+.content .right {
+  font-size: 0.9375vw;
+  color: #333333;
+}
+.content .right span {
+  padding: 0.625vw 1.45833333vw;
+  cursor: pointer;
+  border-radius: 20px;
+}
+.content .right span:hover {
+  color: #fff;
+  background-color: #234CE2;
+}
+.content .right .active {
+  color: #fff;
+  background-color: #234CE2;
+}
+.news-list {
+  width: 67.70833333vw;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.news-list a {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #3E3A39;
+  padding-bottom: 1.77083333vw;
+  width: 21.875vw;
+  margin-right: 0.9375vw;
+  margin-top: 3.90625vw;
+  overflow: hidden;
+}
+.news-list a:hover {
+  border-bottom: 1px solid #234CE2;
+  box-shadow: 0 5px 47px 4px rgba(214, 211, 211, 0.75);
+}
+.news-list a:hover img {
+  transform: scale(1.1);
+}
+.news-list a:nth-child(3n) {
+  margin-right: 0;
+}
+.news-list a img {
+  width: 21.875vw;
+  height: 13.54166667vw;
+  object-fit: cover;
+  transition: all 0.36s;
+}
+.news-list a span {
+  padding-left: 1.5625vw;
+  padding-top: 1.25vw;
+  font-size: 0.9375vw;
+  color: #333;
+}
+.news-list a span:last-child {
+  font-size: 0.72916667vw;
+  color: #8D8C8C;
+  margin-top: auto;
+}
+#pageBox {
+  margin-top: 18px;
+  text-align: center;
+}
+#pageBox .pagination {
+  display: inline-block;
+  vertical-align: top;
+  height: 1.97916667vw;
+  width: 1.97916667vw;
+  text-align: center;
+  line-height: 1.97916667vw;
+  border: 1px solid #6E6B6A;
+  background-color: transparent;
+  border-radius: 50%;
+  color: #333;
+  padding: 0 0.52083333vw;
+  font-size: 0.72916667vw;
+  margin: 0 0.26041667vw;
+  white-space: nowrap;
+  cursor: pointer;
+}
+#pageBox .pagination:hover {
+  background-color: #234CE2;
+  color: #fff;
+}
+#pageBox .active {
+  background-color: #234CE2;
+  color: #fff;
+}

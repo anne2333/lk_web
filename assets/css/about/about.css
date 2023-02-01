@@ -1,0 +1,75 @@
+.introduce {
+  width: 67.70833333vw;
+  margin: 0 auto;
+  margin-top: 7.03125vw;
+  display: flex;
+}
+.introduce .left {
+  flex: 1;
+  width: 30.46875vw;
+  padding-right: 6.5625vw;
+}
+.introduce .left .title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1.77083333vw;
+}
+.introduce .left .title p {
+  display: inline-block;
+  padding-right: 0.625vw;
+}
+.introduce .left .title p:first-child {
+  color: #234CE2;
+}
+.introduce .left .title p:last-child {
+  color: #949594;
+  font-size: 0.83333333vw;
+  align-self: flex-end;
+}
+.introduce .left .content {
+  padding-top: 2.60416667vw;
+  text-align: left;
+  color: #949594;
+  font-size: 0.72916667vw;
+  letter-spacing: 2px;
+  text-indent: 1.45833333vw;
+  font-family: "SourceHanSansCN-Normal";
+}
+.introduce .left .content p {
+  margin-bottom: 0.52083333vw;
+}
+.introduce .right {
+  flex: 1;
+  box-shadow: 1.04166667vw 1.5625vw 0.26041667vw rgba(62, 58, 57, 0.1);
+}
+.introduce .right img {
+  width: 100%;
+  height: 100%;
+}
+.introduce .count .page2-ul {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.83333333vw;
+}
+.introduce .count .page2-ul li {
+  text-align: initial;
+}
+.introduce .count .page2-ul li div {
+  display: flex;
+  font-size: 0.72916667vw;
+}
+.introduce .count .page2-ul li div div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.introduce .count .page2-ul sup {
+  color: #234CE2;
+}
+.introduce .count .page2-ul .value1,
+.introduce .count .page2-ul .value2,
+.introduce .count .page2-ul .value3 {
+  color: #234CE2;
+  font-size: 60px;
+}

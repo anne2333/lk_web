@@ -1,0 +1,60 @@
+.main {
+  position: relative;
+}
+.main .title {
+  position: absolute;
+  left: 16.09375vw;
+  top: 13.80208333vw;
+  font-weight: bold;
+  color: #3E3A39;
+  font-size: 2.34375vw;
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 0.36458333vw;
+}
+.main .title span:last-child {
+  font-size: 1.5625vw;
+  font-weight: normal;
+  letter-spacing: normal;
+}
+.content {
+  height: 39.0625vw;
+}
+.content .top {
+  height: 12.08333333vw;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content .top span:first-child {
+  color: #333;
+  font-size: 1.77083333vw;
+  margin-top: 5.52083333vw;
+}
+.content .top span:last-child {
+  font-size: 0.83333333vw;
+  color: #949594;
+}
+.content #certify {
+  position: relative;
+  width: 67.70833333vw;
+  /*判断宽度设置响应式效果*/
+  margin: 0 auto;
+}
+.content #certify .swiper {
+  padding-bottom: 3.125vw;
+}
+.content #certify .swiper-slide {
+  width: 41.66666667vw;
+  height: 29.47916667vw;
+}
+.content #certify .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.content #certify .swiper-pagination {
+  width: 100%;
+  bottom: 1.04166667vw;
+}

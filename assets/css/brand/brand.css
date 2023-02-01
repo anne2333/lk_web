@@ -1,0 +1,65 @@
+.main {
+  position: relative;
+}
+.main .title {
+  position: absolute;
+  left: 16.09375vw;
+  top: 13.80208333vw;
+  font-weight: bold;
+  color: #3E3A39;
+  font-size: 2.34375vw;
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 0.36458333vw;
+}
+.main .title span:last-child {
+  font-size: 1.5625vw;
+  font-weight: normal;
+  letter-spacing: normal;
+}
+.content .top {
+  height: 12.08333333vw;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content .top span:first-child {
+  color: #333;
+  font-size: 1.77083333vw;
+  margin-top: 5.52083333vw;
+}
+.content .top span:last-child {
+  font-size: 0.83333333vw;
+  color: #949594;
+}
+.content .logo-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 67.70833333vw;
+  height: 31.25vw;
+  margin: 0 auto;
+  transition: 0.5s 1s;
+  justify-content: space-between;
+  align-content: space-between;
+}
+.content .logo-list .logo-item {
+  width: calc(25% - 8px);
+  box-shadow: 0.57291667vw 0.83333333vw 0.625vw rgba(62, 58, 57, 0.15);
+  position: relative;
+  border-radius: 15px;
+  transition: 0.5s;
+  width: 15.67708333vw;
+  height: 8.125vw;
+}
+.content .logo-list .logo-item img {
+  object-fit: cover;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.content .logo-list .logo-item:hover {
+  transform: translate(-5%, 0) scale(1.1);
+  background-color: #f5f5f5;
+}
